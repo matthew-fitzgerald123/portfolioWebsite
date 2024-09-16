@@ -4,16 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "start": "node app.js"
   },
   "dependencies": {
-    "ejs": "^3.1.10",
+    "ejs": "^3.1.9",
     "express": "^4.21.0"
   },
-  "author": "Matthew Fitzgerald",
-  "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.11"
-  }
+  },
+  "author": "Matthew Fitzgerald",
+  "license": "ISC"
 }
