@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Fitzgerald's Portfolio</title>
+
+<!-- Include Tailwind's custom build -->
+<link href="/dist/output.css" rel="stylesheet">
+
+<!-- FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+<!-- AOS Library for Animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Custom Styles -->
+<link href="/output.css" rel="stylesheet">
+</head>
+
+<body class="relative transition-colors duration-500 dark:bg-dark-bg dark:text-dark-text">
+  <!-- Fixed Video Background -->
+  <video id="video-background" class="fixed top-0 left-0 w-full h-full object-cover z-[-1]" autoplay loop muted playsinline>
+    <source src="/videos/hero-background.mp4" type="video/mp4">
+    <source src="/videos/hero-background.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Hero Section with Title Box -->
+  <div id="hero" class="relative flex flex-col items-center justify-center text-center min-h-screen z-10">
+    <div class="bg-white dark:bg-dark-bg bg-opacity-90 p-10 rounded-lg transition-colors duration-500" data-aos="fade-down">
+      <h1 class="text-5xl font-bold text-black dark:text-dark-text">Matthew Fitzgerald</h1>
+      <p class="text-2xl text-gray-800 dark:text-dark-text mt-4">Software Developer</p>
+      <div class="flex justify-center mt-6">
+        <!-- LinkedIn Button -->
+        <a href="https://www.linkedin.com/in/matthew-fitzgerald-552048178/" target="_blank" rel="noopener noreferrer"
+          class="text-white bg-blue-600 hover:bg-blue-700 py-3 px-6 rounded-full flex items-center mr-4 transition text-base">
+          <i class="fab fa-linkedin mr-2"></i> LinkedIn
+        </a>
+        <!-- GitHub Button -->
+        <a href="https://github.com/matthew-fitzgerald123" target="_blank" rel="noopener noreferrer"
+          class="text-white bg-gray-800 hover:bg-gray-900 py-3 px-6 rounded-full flex items-center transition text-base">
+          <i class="fab fa-github mr-2"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6 space-y-16 z-10 relative">
+        <!-- About Me and Skills Section -->
+        <div id="content-sections" class="flex flex-col md:flex-row md:justify-between space-y-8 md:space-y-0 md:space-x-8 opacity-0 transform translate-y-5 transition-all duration-1000 ease-in-out" data-aos="fade-up">
+            <!-- About Me Section -->
+            <section id="about" class="flex-1 bg-white dark:bg-black bg-opacity-90 dark:bg-opacity-80 shadow-lg rounded-lg p-8 transition duration-500 ease-in-out">
+                <h2 class="text-4xl font-bold text-black dark:text-white mb-4">About Me</h2>
+                <article class="space-y-4 text-lg leading-relaxed text-gray-900 dark:text-gray-300">
+                    <p>I am a software developer graduating in December 2024 with a B.S. in Computer Science. I have strong skills in Python, JavaScript, and developing scalable web applications using frameworks like React.js and Node.js. My work focuses on creating efficient and robust software solutions that leverage cloud computing, machine learning, and modern development practices.</p>
+                    <p>Throughout my academic and professional experiences, I have built a solid foundation in core computer science principles, including programming languages, artificial intelligence, software development, and project management. This comprehensive education has allowed me to work on a variety of projects, from machine learning model development to API integration and data analytics.</p>
+                    <p>In my recent internship, I gained practical experience working with cloud platforms such as AWS to automate deployments and manage cloud-based infrastructure. My approach to development emphasizes best practices such as version control, continuous integration, and automated testing to ensure code quality and maintainability.</p>
+                    <p>I am particularly interested in advancing the capabilities of machine learning and data-driven applications. My experience with tools like Docker, Kubernetes, and RESTful APIs has been crucial in developing scalable systems that meet real-world requirements. I am always eager to explore new technologies and methodologies that enhance efficiency, security, and user experience.</p>
+                    <p>Apart from technical skills, I have developed strong collaboration and communication skills through various team-based projects and community service activities. These experiences have helped me adapt quickly to new challenges and environments, making me an effective team member who is committed to continuous learning and growth in the tech industry.</p>
+                </article>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="flex-1 bg-white dark:bg-black bg-opacity-90 dark:bg-opacity-80 shadow-lg rounded-lg p-8 transition duration-500 ease-in-out">
+                <h2 class="text-4xl font-bold text-black dark:text-white mb-4">Skills</h2>
+                <div class="flex flex-wrap gap-4">
+                    <span class="bg-blue-100 dark:bg-blue-600 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full">Python</span>
+                    <span class="bg-green-100 dark:bg-green-600 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Machine Learning</span>
+                    <span class="bg-purple-100 dark:bg-purple-600 text-purple-800 dark:text-purple-100 px-4 py-2 rounded-full">Data Analysis</span>
+                    <span class="bg-yellow-100 dark:bg-yellow-600 text-yellow-800 dark:text-yellow-100 px-4 py-2 rounded-full">JavaScript</span>
+                    <span class="bg-red-100 dark:bg-red-600 text-red-800 dark:text-red-100 px-4 py-2 rounded-full">React.js</span>
+                    <span class="bg-pink-100 dark:bg-pink-600 text-pink-800 dark:text-pink-100 px-4 py-2 rounded-full">Node.js</span>
+                    <span class="bg-teal-100 dark:bg-teal-600 text-teal-800 dark:text-teal-100 px-4 py-2 rounded-full">Docker</span>
+                    <span class="bg-indigo-100 dark:bg-indigo-600 text-indigo-800 dark:text-indigo-100 px-4 py-2 rounded-full">CI/CD</span>
+                    <span class="bg-gray-100 dark:bg-gray-600 text-gray-800 dark:text-gray-100 px-4 py-2 rounded-full">AWS</span>
+                    <span class="bg-orange-100 dark:bg-orange-600 text-orange-800 dark:text-orange-100 px-4 py-2 rounded-full">API Development</span>
+                    <span class="bg-blue-100 dark:bg-blue-600 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full">Web Scraping</span>
+                    <span class="bg-green-100 dark:bg-green-600 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Pandas</span>
+                    <span class="bg-purple-100 dark:bg-purple-600 text-purple-800 dark:text-purple-100 px-4 py-2 rounded-full">NumPy</span>
+                    <span class="bg-yellow-100 dark:bg-yellow-600 text-yellow-800 dark:text-yellow-100 px-4 py-2 rounded-full">Flask</span>
+                    <span class="bg-red-100 dark:bg-red-600 text-red-800 dark:text-red-100 px-4 py-2 rounded-full">Django</span>
+                    <span class="bg-pink-100 dark:bg-pink-600 text-pink-800 dark:text-pink-100 px-4 py-2 rounded-full">Version Control (Git)</span>
+                    <span class="bg-teal-100 dark:bg-teal-600 text-teal-800 dark:text-teal-100 px-4 py-2 rounded-full">SQL</span>
+                    <span class="bg-indigo-100 dark:bg-indigo-600 text-indigo-800 dark:text-indigo-100 px-4 py-2 rounded-full">Test-Driven Development (TDD)</span>
+                    <span class="bg-gray-100 dark:bg-gray-600 text-gray-800 dark:text-gray-100 px-4 py-2 rounded-full">Microservices Architecture</span>
+                    <span class="bg-orange-100 dark:bg-orange-600 text-orange-800 dark:text-orange-100 px-4 py-2 rounded-full">Object-Oriented Programming (OOP)</span>
+                    <span class="bg-blue-100 dark:bg-blue-600 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full">Scikit-Learn</span>
+                    <span class="bg-green-100 dark:bg-green-600 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Data Visualization</span>
+                    <span class="bg-purple-100 dark:bg-purple-600 text-purple-800 dark:text-purple-100 px-4 py-2 rounded-full">Fullstack Development</span>
+                    <span class="bg-yellow-100 dark:bg-yellow-600 text-yellow-800 dark:text-yellow-100 px-4 py-2 rounded-full">Kubernetes</span>
+                    <span class="bg-red-100 dark:bg-red-600 text-red-800 dark:text-red-100 px-4 py-2 rounded-full">Automation Scripting</span>
+                    <span class="bg-pink-100 dark:bg-pink-600 text-pink-800 dark:text-pink-100 px-4 py-2 rounded-full">Agile Development</span>
+                    <span class="bg-teal-100 dark:bg-teal-600 text-teal-800 dark:text-teal-100 px-4 py-2 rounded-full">SQLAlchemy</span>
+                    <span class="bg-gray-100 dark:bg-gray-600 text-gray-800 dark:text-gray-100 px-4 py-2 rounded-full">RESTful APIs</span>
+                    <span class="bg-orange-100 dark:bg-orange-600 text-orange-800 dark:text-orange-100 px-4 py-2 rounded-full">Debugging and Problem-Solving</span>
+                    <span class="bg-yellow-100 dark:bg-yellow-600 text-yellow-800 dark:text-yellow-100 px-4 py-2 rounded-full">RESTful API Design</span>
+                    <span class="bg-red-100 dark:bg-red-600 text-red-800 dark:text-red-100 px-4 py-2 rounded-full">Cloud Computing (Azure, GCP)</span>
+                    <span class="bg-pink-100 dark:bg-pink-600 text-pink-800 dark:text-pink-100 px-4 py-2 rounded-full">GraphQL</span>
+                    <span class="bg-teal-100 dark:bg-teal-600 text-teal-800 dark:text-teal-100 px-4 py-2 rounded-full">Terraform</span>
+                    <span class="bg-indigo-100 dark:bg-indigo-600 text-indigo-800 dark:text-indigo-100 px-4 py-2 rounded-full">Responsive Web Design</span>
+                    <span class="bg-gray-100 dark:bg-gray-600 text-gray-800 dark:text-gray-100 px-4 py-2 rounded-full">SQL Optimization</span>
+                    <span class="bg-orange-100 dark:bg-orange-600 text-orange-800 dark:text-orange-100 px-4 py-2 rounded-full">Shell Scripting (Bash)</span>
+                    <span class="bg-blue-100 dark:bg-blue-600 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full">Data Engineering</span>
+                    <span class="bg-green-100 dark:bg-green-600 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Data Cleaning and Preprocessing</span>
+                    <span class="bg-purple-100 dark:bg-purple-600 text-purple-800 dark:text-purple-100 px-4 py-2 rounded-full">Distributed Systems</span>
+                    <span class="bg-yellow-100 dark:bg-yellow-600 text-yellow-800 dark:text-yellow-100 px-4 py-2 rounded-full">ETL Pipelines</span>
+                    <span class="bg-red-100 dark:bg-red-600 text-red-800 dark:text-red-100 px-4 py-2 rounded-full">NoSQL Databases (MongoDB)</span>
+                    <span class="bg-pink-100 dark:bg-pink-600 text-pink-800 dark:text-pink-100 px-4 py-2 rounded-full">Continuous Monitoring (Prometheus, Grafana)</span>
+                    <span class="bg-teal-100 dark:bg-teal-600 text-teal-800 dark:text-teal-100 px-4 py-2 rounded-full">Serverless Architectures</span>
+                    <span class="bg-indigo-100 dark:bg-indigo-600 text-indigo-800 dark:text-indigo-100 px-4 py-2 rounded-full">Container Orchestration</span>
+                </div>
+            </section>
+        </div>
+
+        <!-- Projects Section -->
+<section id="projects" class="bg-white dark:bg-black bg-opacity-90 dark:bg-opacity-80 shadow-lg rounded-lg p-8 transition duration-500 ease-in-out opacity-0 transform translate-y-5 transition-all duration-1000 ease-in-out" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-black dark:text-white mb-4">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card: Recipe Web App -->
+        <div class="bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 p-6 shadow-lg rounded-lg hover:shadow-2xl transition flex flex-col justify-between" data-aos="zoom-in">
+            <div>
+                <h3 class="text-2xl font-bold text-black dark:text-white">Recipe Web App</h3>
+                <img src="/images/recipeWebAppImage.png" alt="Recipe Web App" class="w-full h-64 md:h-48 lg:h-48 object-contain mt-4 rounded-lg shadow-md" loading="lazy">
+                <p class="text-gray-700 dark:text-gray-300 mt-4">Created a web app that allows users to input ingredients and receive relevant recipes.</p>
+            </div>
+            <a href="https://github.com/matthew-fitzgerald123/recipeWebApp" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline mt-4 block">View Repository</a>
+        </div>
+        
+        <!-- Project Card: Playing Card Machine Learning Model -->
+        <div class="bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 p-6 shadow-lg rounded-lg hover:shadow-2xl transition flex flex-col justify-between" data-aos="zoom-in">
+            <div>
+                <h3 class="text-2xl font-bold text-black dark:text-white">Playing Card Machine Learning Model</h3>
+                <img src="/images/playingcard.jpg" alt="Playing Card Machine Learning Model" class="w-full h-64 md:h-48 lg:h-48 object-contain mt-4 rounded-lg shadow-md" loading="lazy">
+                <p class="text-gray-700 dark:text-gray-300 mt-4">Trained and created a machine learning model that recognizes playing cards.</p>
+            </div>
+            <a href="https://github.com/matthew-fitzgerald123/playing_cards_machine_learning" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline mt-4 block">View Repository</a>
+        </div>
+
+        <!-- Project Card: Turtle Machine Learning Model -->
+        <div class="bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 p-6 shadow-lg rounded-lg hover:shadow-2xl transition flex flex-col justify-between" data-aos="zoom-in">
+            <div>
+                <h3 class="text-2xl font-bold text-black dark:text-white">Turtle Machine Learning Model</h3>
+                <img src="/images/turtle.jpg" alt="Turtle Machine Learning Model" class="w-full h-64 md:h-48 lg:h-48 object-contain mt-4 rounded-lg shadow-md" loading="lazy">
+                <p class="text-gray-700 dark:text-gray-300 mt-4">Trained and created a machine learning model that recognizes turtles.</p>
+            </div>
+            <a href="https://github.com/matthew-fitzgerald123/turtles_machine_learning" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline mt-4 block">View Repository</a>
+        </div>
+
+        <!-- Project Card: System Metrics Pipeline -->
+        <div class="bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 p-6 shadow-lg rounded-lg hover:shadow-2xl transition flex flex-col justify-between" data-aos="zoom-in">
+            <div>
+                <h3 class="text-2xl font-bold text-black dark:text-white">System Metrics Pipeline</h3>
+                <img src="/images/system_mets_monitor.png" alt="System Metrics Pipeline" class="w-full h-64 md:h-48 lg:h-48 object-contain mt-4 rounded-lg shadow-md" loading="lazy">
+                <p class="text-gray-700 dark:text-gray-300 mt-4">Created a set of scripts that establishes a pipeline providing live system metrics like CPU and memory usage.</p>
+            </div>
+            <a href="https://github.com/matthew-fitzgerald123/system_metrics_pipeline" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline mt-4 block">View Repository</a>
+        </div>
+
+        <!-- Project Card: United Offers Scraper -->
+        <div class="bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 p-6 shadow-lg rounded-lg hover:shadow-2xl transition flex flex-col justify-between" data-aos="zoom-in">
+            <div>
+                <h3 class="text-2xl font-bold text-black dark:text-white">United Offers Scraper</h3>
+                <img src="/images/plane.jpg" alt="United Offers Scraper" class="w-full h-64 md:h-48 lg:h-48 object-contain mt-4 rounded-lg shadow-md" loading="lazy">
+                <p class="text-gray-700 dark:text-gray-300 mt-4">Created a script that successfully scrapes offers and limited-time promotions from the United Airlines website.</p>
+            </div>
+            <a href="https://github.com/matthew-fitzgerald123/united_offers_scraper" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline mt-4 block">View Repository</a>
+        </div>
+
+        <!-- Project Card: Stock Price CI/CD Application -->
+        <div class="bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 p-6 shadow-lg rounded-lg hover:shadow-2xl transition flex flex-col justify-between" data-aos="zoom-in">
+            <div>
+                <h3 class="text-2xl font-bold text-black dark:text-white">Stock Price CI/CD Application</h3>
+                <img src="/images/money.jpg" alt="Stock Price CI/CD Application" class="w-full h-64 md:h-48 lg:h-48 object-contain mt-4 rounded-lg shadow-md" loading="lazy">
+                <p class="text-gray-700 dark:text-gray-300 mt-4">Created an application that makes use of Heroku and a stock price API to provide live stock prices.</p>
+            </div>
+            <a href="https://github.com/matthew-fitzgerald123/stock_pipeline_project" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline mt-4 block">View Repository</a>
+        </div>
+    </div>
+</section>
+
+<!-- Resume Section -->
+<section id="resume" class="bg-white dark:bg-black bg-opacity-90 dark:bg-opacity-80 shadow-lg rounded-lg p-8 transition duration-500 ease-in-out opacity-0 transform translate-y-5 transition-all duration-1000 ease-in-out" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-black dark:text-white mb-4">Resume</h2>
+    <div class="space-y-8">
+        <!-- Education -->
+        <div>
+            <h3 class="text-2xl font-semibold text-black dark:text-white">Education</h3>
+            <ul class="list-none list-inside mt-2 text-gray-700 dark:text-gray-300">
+                <li><strong>Florida Tech</strong> - B.S. in Computer Science, 2021-2024</li>
+            </ul>
+        </div>
+        <!-- Work Experience -->
+        <div>
+            <h3 class="text-2xl font-semibold text-black dark:text-white">Work Experience</h3>
+            <ul class="list-none list-inside mt-2 text-gray-700 dark:text-gray-300">
+                <li><strong>Software Engineer at Dfinitiv.io</strong> - Summer 2023</li>
+                <li><strong>Deli Clerk at Shoprite</strong> - Summer 2024</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-black bg-opacity-90 dark:bg-opacity-80 p-6">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-700 dark:text-gray-300">&copy; 2024 Matthew Fitzgerald</p>
+        </div>
+    </footer>
+
+
+    <!-- AOS Library and Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1200,
+            once: true,
+            offset: 200,
+        });
+
+        // Function to show content sections when AOS animation triggers
+        document.addEventListener('aos:in', ({ detail }) => {
+            if (['content-sections', 'projects', 'resume', 'contact'].includes(detail.id)) {
+                detail.classList.remove('opacity-0', 'translate-y-5');
+                detail.classList.add('opacity-100', 'translate-y-0');
+            }
+        });
+
+        // Function to hide content sections when scrolling back up
+        document.addEventListener('aos:out', ({ detail }) => {
+            if (['content-sections', 'projects', 'resume', 'contact'].includes(detail.id)) {
+                detail.classList.add('opacity-0', 'translate-y-5');
+                detail.classList.remove('opacity-100', 'translate-y-0');
+            }
+        });
+
+        // Fix scrolling issue on page refresh
+        document.addEventListener('DOMContentLoaded', function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
+        <script>
+      console.log("Dark Mode Script Ran")
+      // Check for user's system preference and set the theme
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark'); // Add 'dark' class for dark mode
+      } else {
+        document.documentElement.classList.remove('dark'); // Remove 'dark' class for light mode
+      }
+    </script>
+</body>
+
+</html>
