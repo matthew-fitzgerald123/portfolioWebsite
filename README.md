@@ -1,4 +1,4 @@
-# website project
+# Website Project
 fullstack development project
 
 Visit the live website at: [matthewfitzgerald.net](https://matthewfitzgerald.net)
