@@ -17,35 +17,62 @@
     <link rel="icon" href="light-mode-icon.png" type="image/png" media="(prefers-color-scheme: light)">
     <!-- Favicon for Dark Mode -->
     <link rel="icon" href="dark-mode-icon.png" type="image/png" media="(prefers-color-scheme: dark)">
+    <style>
+        /* CSS to account for safe area insets */
+        body {
+            padding-top: env(safe-area-inset-top);
+            padding-right: env(safe-area-inset-right);
+            padding-bottom: env(safe-area-inset-bottom);
+            padding-left: env(safe-area-inset-left);
+        }
+
+        #hero {
+            padding-top: calc(2rem + env(safe-area-inset-top));
+            padding-bottom: 2rem;
+            padding-left: env(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+        }
+
+        .container {
+            padding-left: env(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+        }
+
+        /* Add padding to buttons to account for safe area */
+        .button {
+            margin-left: env(safe-area-inset-left);
+            margin-right: env(safe-area-inset-right);
+        }
+    </style>
 </head>
 
 <body class="relative transition-colors duration-500 dark:bg-dark-bg dark:text-dark-text">
-  <!-- Fixed Video Background -->
+    <!-- Fixed Video Background -->
     <video id="video-background" class="fixed top-0 left-0 w-full h-full object-cover z-[-1]" autoplay loop muted playsinline>
-      <source src="public/videos/hero-background.mp4" type="video/mp4">
-      <source src="public/videos/hero-background.webm" type="video/webm">
-      Your browser does not support the video tag.
+        <source src="public/videos/hero-background.mp4" type="video/mp4">
+        <source src="public/videos/hero-background.webm" type="video/webm">
+        Your browser does not support the video tag.
     </video>
 
-  <!-- Hero Section with Title Box -->
-  <div id="hero" class="relative flex flex-col items-center justify-center text-center min-h-screen z-10">
-    <div class="bg-white dark:bg-dark-bg bg-opacity-90 p-10 rounded-lg transition-colors duration-500" data-aos="fade-down">
-      <h1 class="text-5xl font-bold text-black dark:text-dark-text">Matthew Fitzgerald</h1>
-      <p class="text-2xl text-gray-800 dark:text-dark-text mt-4">Software Developer</p>
-      <div class="flex justify-center mt-6">
-        <!-- LinkedIn Button -->
-        <a href="https://www.linkedin.com/in/matthew-fitzgerald-552048178/" target="_blank" rel="noopener noreferrer"
-          class="text-white bg-blue-600 hover:bg-blue-700 py-3 px-6 rounded-full flex items-center mr-4 transition text-base">
-          <i class="fab fa-linkedin mr-2"></i> LinkedIn
-        </a>
-        <!-- GitHub Button -->
-        <a href="https://github.com/matthew-fitzgerald123" target="_blank" rel="noopener noreferrer"
-          class="text-white bg-gray-800 hover:bg-gray-900 py-3 px-6 rounded-full flex items-center transition text-base">
-          <i class="fab fa-github mr-2"></i> GitHub
-        </a>
-      </div>
+    <!-- Hero Section with Title Box -->
+    <div id="hero" class="relative flex flex-col items-center justify-center text-center min-h-screen z-10">
+        <div class="bg-white dark:bg-dark-bg bg-opacity-90 p-10 rounded-lg transition-colors duration-500" data-aos="fade-down">
+            <h1 class="text-5xl font-bold text-black dark:text-dark-text">Matthew Fitzgerald</h1>
+            <p class="text-2xl text-gray-800 dark:text-dark-text mt-4">Software Developer</p>
+            <div class="flex justify-center mt-6 button">
+                <!-- LinkedIn Button -->
+                <a href="https://www.linkedin.com/in/matthew-fitzgerald-552048178/" target="_blank" rel="noopener noreferrer"
+                    class="text-white bg-blue-600 hover:bg-blue-700 py-3 px-6 rounded-full flex items-center mr-4 transition text-base">
+                    <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                </a>
+                <!-- GitHub Button -->
+                <a href="https://github.com/matthew-fitzgerald123" target="_blank" rel="noopener noreferrer"
+                    class="text-white bg-gray-800 hover:bg-gray-900 py-3 px-6 rounded-full flex items-center transition text-base">
+                    <i class="fab fa-github mr-2"></i> GitHub
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
 
     <!-- Main Content -->
     <main class="container mx-auto p-6 space-y-16 z-10 relative">
